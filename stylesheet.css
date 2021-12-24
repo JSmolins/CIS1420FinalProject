@@ -1,0 +1,250 @@
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+/* Header Styling */
+header{
+  margin-top: -3em;
+  background-image: url(images/D256_19_615_1200.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -150px;
+}
+h1{
+  font-family: sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  padding-top: 1em;
+  padding-left: 15%;
+  color: white;
+}
+hr{
+  clear: left;
+  height: 1px;
+  width: 100%;
+  color: #7bbde1;
+}
+
+/* Navigation Styling */
+.topnav{
+  background-color: #7bbde1;
+  overflow: hidden;
+  padding-left: 15%;
+}
+.topnav a{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+.topnav a:hover{
+  background-color: #ddd;
+  color: black;
+  transition: 0.3s;
+}
+.topnav a.active{
+  background-color: #122f6b;
+  color: white;
+}
+
+/* Main Styling */
+main{
+  padding: 1em 15% 1em 15%;
+}
+h2{
+  font-size: 2em;
+  color: #122f6b;
+}
+h3{
+  font-size: 1.5em;
+  color: #122f6b;
+}
+h4{
+  font-size: 1em;
+  color: #122f6b;
+}
+.pureMichImg{
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+.lhImage{
+  width: 100%;
+  height: auto;
+  opacity: 0.75;
+}
+.lhImage:hover{
+  scale: 1.02;
+}
+.lhCard1, .lhCard2, .lhCard3{
+  columns: 300px 2;
+  width: 100%;
+  column-rule: 4px solid crimson;
+  text-align: justify;
+  border: 1px solid #122f6b;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: 5px 10px rgba(210, 210, 210, 0.5);
+}
+figcaption{
+  font-size: .75em;
+  color: #122f6b;
+}
+.lhVideo{
+  margin-top: 2em;
+  margin-left: 25%;
+}
+.parkContainer{
+  display: flex;
+  flex-direction: column;
+}
+.parkTable{
+  margin: auto;
+  margin-bottom: 2em;
+  caption-side: bottom;
+}
+.parkTitle{
+  font-size: 1.5em;
+  color: #122f6b;
+  padding: 1em;
+}
+.amenities{
+  font-size: 1.2em;
+  color: crimson;
+}
+.tableImg{
+  height: 200px;
+  width: auto;
+  opacity: 0.75;
+  margin: 1.5em;
+}
+.etiquette{
+  margin: auto;
+}
+.lakesMain{
+  display: flex;
+  flex-direction: column;
+}
+.greatLakesHeader{
+  font-size: 2em;
+  color: #122f6b;
+}
+.lakesMap{
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: 100%;
+  width: auto;
+}
+.weatherWidget{
+  margin-top: 2em;
+}
+
+/* Lakes Table Styling */
+.lakesTable{
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+}
+.lakesTitle{ 
+  font-size: 2em;
+  color: #122f6b;
+}
+.lakesData, .lakesHeader{
+  border: 1px solid black;
+  padding: .33em;
+}
+.lakesHeader{
+  color: #122f6b;
+}
+.lakesCaption{
+  font-size: .75em;
+  font-style: italic;
+  caption-side: bottom;
+}
+
+/* Contact Form Styling */
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+input[type=submit] {
+  background-color: #7bbde1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #122f6b;
+  transition: 0.3s;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+} 
+
+/* Footer Styling */
+  footer{
+    background-color: #7bbde1;
+    height: auto;
+    width: 100%;
+    padding: 1em 15% 1em 15%;
+  }
+  footer p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    text-align: center;
+  }
+  .top{
+    position: relative;
+    left: 90%;
+    bottom: 35px;
+    color: white;
+  }
+
+/* Media Queries */
+@media screen and (max-width: 670px){
+  header{
+    background-image: none;
+  }
+  h1{
+    color: #7bbde1;
+    font-size: 2em;
+  }
+  hr{
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1000px){
+  h1{
+    padding-left: 1em;
+  }
+  .topnav{
+    padding-left: 1em;
+  }
+  main{
+    padding: 1em;
+  }
+}
